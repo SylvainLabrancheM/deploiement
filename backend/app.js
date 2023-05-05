@@ -34,8 +34,9 @@ app.use((error, requete, reponse, next) => {
     message: error.message || "Une erreur inconnue est survenue",
   });
 });
+
 mongoose
-.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_PASSWORD}.rrmqgpc.mongodb.net/?retryWrites=true&w=majority`)
+.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_NAME}.rrmqgpc.mongodb.net/?retryWrites=true&w=majority`)
 .then(() => {
     app.listen(5000)
     console.log("Connexion à la base de données réussie");
