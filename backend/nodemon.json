@@ -2,6 +2,6 @@
     "env": {
         "DB_USER": "slsylvainlabranche",
         "DB_PASSWORD": "elbN2ZioU5TLqaaZ",
-        "DB_NAME":"mern"
+        "DB_NAME":"sylvain"
     }
 }
